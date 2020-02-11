@@ -66,8 +66,9 @@ aTags[5].textContent = siteContent['nav']['nav-item-6'];
 //Nav color change---
 aTags.forEach(aTag => { aTag.style.color = 'green' });
 //PrePend A Tag---
-let newPrependATag = document.querySelector('a');
-newPrependATag.textContent = "I'm Amazing!"
+let newPrependATag = document.createElement('a');
+newPrependATag.textContent = "I'm Amazing!";
+newPrependATag.style.color = 'green';
 let navBar = document.querySelector('nav');
 navBar.prepend(newPrependATag);
 //Append A Tag---
