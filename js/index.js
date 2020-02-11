@@ -63,6 +63,19 @@ aTags[2].textContent = siteContent['nav']['nav-item-3'];
 aTags[3].textContent = siteContent['nav']['nav-item-4'];
 aTags[4].textContent = siteContent['nav']['nav-item-5'];
 aTags[5].textContent = siteContent['nav']['nav-item-6'];
+//Nav color change---
+aTags.forEach(aTag => { aTag.style.color = 'green' });
+//PrePend A Tag---
+let newPrependATag = document.querySelector('a');
+newPrependATag.textContent = "I'm Amazing!"
+let navBar = document.querySelector('nav');
+navBar.prepend(newPrependATag);
+//Append A Tag---
+let newAppendChildATag = document.createElement('a');
+newAppendChildATag.textContent = `That's what I said!`;
+newAppendChildATag.style.color = 'green';
+navBar.appendChild(newAppendChildATag);
+
 
 //button and DOM is Awesome content text START-------
 let btn = document.querySelector('button');
